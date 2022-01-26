@@ -26,7 +26,12 @@ Postman URLs:
 * curl --location --request GET 'localhost:8080/getByBlock/?block=3569'
 3. Add a new Food Truck 
 * curl --location --request POST 'localhost:8080/newFoodTrucks' --header 'Content-Type: application/json' --data-raw 
-* ' { insert food truck object parameters (note they will all be string values }'
+* ' { insert food truck object parameters }'
+* All key value pairs must be strings as defined by my Food Truck object class. Additionally, my program assumes that location ID is unique. 
+* Example:
+
+curl --location --request POST 'localhost:8080/newFoodTrucks --header 'Content-Type: application/json' --data-raw ' { “locationId”: “735318”, “applicant”: “Ziaurehman Amini”, “facilityType”: “Push Cart”, “cnn”: “30727000”, “locationDescription”: “MARKET ST: DRUMM ST intersection”, “address”: “5 THE EMBARCADERO”, “blocklot”: “0234017”, “block”: “0234”, “lot”: “017”, “permit”: “15MFF-0159”, “status”: “REQUESTED”, “foodItems”: ““, “x”: “6013916.72”, “y”: “2117244.027”, “latitude”: “37.7943310032468”, “longitude”: “-122.395811053023”, “schedule”: “http://bsm.sfdpw.org/PermitsTracker/reports/report.aspx?title=schedule&report=rptSchedule&params=permit=15MFF-0159&ExportPDF=1&Filename=15MFF-0159_schedule.pdf”, “daysHours”: ““, “noiSent”: ““, “approved”: ““, “received”: “2015-12-31”, “priorPermit”: “0”, “expirationDate”: “03/15/2016 12:00:00 AM”, “location”: “(37.7943310032468, -122.395811053023)” }'![image](https://user-images.githubusercontent.com/35907509/151186113-4ffef840-9b67-4b3a-8b99-26f442a3305f.png)
+
 
 Cheers.
 
