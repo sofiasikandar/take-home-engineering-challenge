@@ -12,7 +12,7 @@ import org.ssikandar.foodTruck.model.FoodTruck;
 
 public class FoodTruckRepository {
   // path to CSV
-  private final static File filePath = new File("./src/main/resources/data/Mobile_Food_Facility_Permit.csv");
+  private final static File filePath = new File("/Users/ssikandar/Documents/personal/take-home-engineering-challenge/src/main/resources/Mobile_Food_Facility_Permit.csv");
   
   // these maps will be called in FoodTruckController where the endpoints are
   public static Map<String, FoodTruck> locationIdMap = new HashMap<>();

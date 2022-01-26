@@ -7,11 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class FoodTruckApplication {
-  private static final Logger logger = LoggerFactory.getLogger(FoodTruckApplication.class);
-
+  private static final Logger log = LoggerFactory.getLogger(FoodTruckApplication.class);
   public static void main(String[] args) {
-    logger.info("Application Starting");
-    SpringApplication.run(FoodTruckApplication.class, args);
-    logger.info("Application Run Complete");
+    log.info("Application Starting");
+    SpringApplication.run(FoodTruckApplication.class);
+    log.info("Application Run Complete");
   }
 }

@@ -2,9 +2,19 @@
 <project version="4">
   <component name="RemoteRepositoriesConfiguration">
     <remote-repository>
+      <option name="id" value="mitre-caasd" />
+      <option name="name" value="MITRE CAASD" />
+      <option name="url" value="https://dali.mitre.org/nexus/content/groups/mitre-caasd" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="central" />
       <option name="name" value="Central Repository" />
       <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="freehep" />
+      <option name="name" value="Mirrored Repositories" />
+      <option name="url" value="https://dali.mitre.org/nexus/content/groups/mirror" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="central" />
@@ -12,9 +22,19 @@
       <option name="url" value="https://repo1.maven.org/maven2" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="external" />
+      <option name="name" value="Local External Artifacts" />
+      <option name="url" value="https://dali.mitre.org/nexus/content/groups/external" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="jboss.community" />
       <option name="name" value="JBoss Community repository" />
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="proxied-repositories" />
+      <option name="name" value="Proxied Repositories" />
+      <option name="url" value="https://dali.mitre.org/nexus/content/groups/proxied-repositories" />
     </remote-repository>
   </component>
 </project>

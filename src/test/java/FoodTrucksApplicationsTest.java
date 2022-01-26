@@ -2,7 +2,7 @@ import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-public class FoodTruckApplicationTests {
+public class FoodTrucksApplicationsTest {
   
   @Test
   public void contextLoads(){
