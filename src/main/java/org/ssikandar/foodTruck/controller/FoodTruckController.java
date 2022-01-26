@@ -59,7 +59,6 @@ public class FoodTruckController {
       throw new Exception(block + " Block does not exist in " + blockMap);
     }
     ArrayList<FoodTruck> foodTruck = blockMap.get(block);
-    System.out.println(foodTruck);
     return foodTruck;
   }
 }
