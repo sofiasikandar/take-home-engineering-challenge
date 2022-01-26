@@ -39,8 +39,9 @@ public class FoodTruckController {
    * @return food truck object
    *
    * Add a new food truck.
+   * Example: http://localhost:8080/newFoodTrucks
    */
-  @RequestMapping(value="/foodtrucks", method=RequestMethod.POST)
+  @RequestMapping(value="/newFoodTrucks", method=RequestMethod.POST)
   public void addNewFoodTruck(@RequestBody FoodTruck newFoodTruck) throws Exception {
     FoodTruckRepository.addFoodTruck(newFoodTruck);
   }
