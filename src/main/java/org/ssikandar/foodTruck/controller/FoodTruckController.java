@@ -15,6 +15,7 @@ import org.ssikandar.foodTruck.repository.FoodTruckRepository;
 public class FoodTruckController {
   public static Map<String, FoodTruck> locationIdMap = FoodTruckRepository.locationIdMap;
   public static Map<String, ArrayList<FoodTruck>> blockMap = FoodTruckRepository.blockMap;
+  private static final Logger log = LoggerFactory.getLogger(FoodTruckController.class);
 
   public FoodTruckController() {
     FoodTruckRepository.keyValforLocAndBlock();
@@ -43,6 +44,7 @@ public class FoodTruckController {
   @RequestMapping(value="/newFoodTrucks", method=RequestMethod.POST)
   public void addNewFoodTruck(@RequestBody FoodTruck newFoodTruck) throws Exception {
     FoodTruckRepository.addFoodTruck(newFoodTruck);
+    log.info("Successfully added new Food Truck");
   }
 
   /**
