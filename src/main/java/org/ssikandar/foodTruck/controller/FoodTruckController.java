@@ -16,7 +16,6 @@ public class FoodTruckController {
   public static Map<String, FoodTruck> locationIdMap = FoodTruckRepository.locationIdMap;
   public static Map<String, ArrayList<FoodTruck>> blockMap = FoodTruckRepository.blockMap;
 
-
   public FoodTruckController() {
     FoodTruckRepository.keyValforLocAndBlock();
   }
@@ -57,7 +56,6 @@ public class FoodTruckController {
   @RequestMapping(value="/getByBlock",method=RequestMethod.GET)
   public ArrayList<FoodTruck> getByBlock(@Param("block") String block) throws Exception{
     if(!blockMap.containsKey(block)){
-      //System.out.println(block);
       throw new Exception(block + " Block does not exist in " + blockMap);
     }
     ArrayList<FoodTruck> foodTruck = blockMap.get(block);
