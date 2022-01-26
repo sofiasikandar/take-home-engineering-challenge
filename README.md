@@ -19,7 +19,7 @@ Postman URLs:
 * http://localhost:8080/newFoodTrucks/
 * Add a Food Truck Object into the Request Body as application/json.
 
-# Access via CURL 
+# Curl Commands
 1. Retrieve by Location ID example
 * curl --location --request GET 'localhost:8080/getByLocationId/751253'
 2. Retrieve by Block example
@@ -28,7 +28,9 @@ Postman URLs:
 * curl --location --request POST 'localhost:8080/newFoodTrucks' --header 'Content-Type: application/json' --data-raw 
 * ' { insert food truck object parameters (note they will all be string values }'
 
----------
+Cheers.
+
+--------------
 
 # Take Home Engineering Challenge
 
